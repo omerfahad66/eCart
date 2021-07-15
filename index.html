@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>eCart</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="/logo.png" alt="logo">
+            </div>
+            <div class="links">
+                <ul>
+                    <li class="submenu">
+                        <img src="/cart.png" alt="">
+                        <div id="cart">
+                            <table id="cartItem">
+                                <thead>
+                                    <tr>
+                                        <th>Image</th>
+                                        <th>Name</th>
+                                        <th>Price</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <!-- items will come here from javascript -->
+                                </tbody>
+                            </table>
+                            <a href="#" id="emptyCart">Empty Cart</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- all course comes here -->
+    <div id="coursesList">
+        <h1 style="text-align: center;">Online Courses</h1>
+        <!-- courses container -->
+        <div class="coursesContainer">
+            <div class="courseCard">
+                <img src="/web.jpeg" alt="">
+                <div class="infoCard">
+                    <h4>Web Dev Frontend</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 120</span>
+                        <span class="sp">$ 95</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="1">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="courseCard">
+                <img src="/cook.jpg" alt="">
+                <div class="infoCard">
+                    <h4>Cooking Course</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 100</span>
+                        <span class="sp">$ 85</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="2">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="courseCard">
+                <img src="/app.jpg" alt="">
+                <div class="infoCard">
+                    <h4>App Development Course</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 100</span>
+                        <span class="sp">$ 75</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="3">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="courseCard">
+                <img src="/painting.jpeg" alt="">
+                <div class="infoCard">
+                    <h4>Painting Course</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 100</span>
+                        <span class="sp">$ 59</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="4">Add to Cart</a>
+                </div>
+            </div>
+
+            <div class="courseCard">
+                <img src="/mern.jpg" alt="">
+                <div class="infoCard">
+                    <h4>Web Development Backend</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 100</span>
+                        <span class="sp">$ 70</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="5">Add to Cart</a>
+                </div>
+            </div>
+            <div class="courseCard">
+                <img src="/cookadd.jpg" alt="">
+                <div class="infoCard">
+                    <h4>Advanced Cooking Course</h4>
+                    <p class="rating">
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                        <i class="fa fa-star"></i>
+                    </p>
+                    <p>
+                        <span class="mrp">$ 100</span>
+                        <span class="sp">$ 70</span>
+                    </p>
+                    <a href="#" class="addCart" data-id="6">Add to Cart</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/script.js"></script>
+
+</html>

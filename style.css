@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+  padding: 0;
+  margin: 0;  
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: coral;
+    user-select: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /* width: 100%; */
+    background-color: white;
+}
+.logo img{
+    width: 70px;
+    height: 70px;
+    margin-left: 50px;
+}
+
+.links ul{
+    list-style: none;
+}
+
+.links ul li img{
+    margin-top: 25px;
+    margin-right: 50px;
+}
+
+#cart{
+    display: none;
+}
+
+.submenu:hover #cart{
+    display: block;
+    position: absolute;
+    height: 500px;
+    min-width: 400px;
+    background-color: orange;
+    right: 5vh;
+    overflow-y: scroll;
+}
+
+#cartItem{
+    display: flex;
+    justify-content: center;
+}
+
+#cartItem thead{
+    display: flex;
+    width: 100%;
+}
+
+#cartItem thead tr{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+#emptyCart{
+    display: block;
+    background-color: red;
+    padding: 5px;
+    margin: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#coursesList{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.coursesContainer{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    flex-flow: wrap;
+}
+
+.coursesContainer .courseCard{
+    width: 300px;
+    background-color: orange;
+    margin-bottom: 50px;
+    border-radius: 10px;
+}
+
+.coursesContainer .courseCard img{
+    width: 100%;
+    height: 180px;
+    border-radius: 10px 10px 0 0;
+}
+
+.coursesContainer .courseCard .infoCard{
+    padding: 10px;
+    line-height: 32px;
+}
+
+.infoCard h4{
+    color: blue;
+}
+
+.infoCard .rating{
+    color: white;
+}
+
+.mrp{
+    text-decoration: line-through red;
+}
+
+.sp{
+    float: right;
+    font-weight: bold;
+}
+
+.addCart{
+    display: block;
+    background-color: green;
+    padding: 5px;
+    margin-top: 20px;
+    font-size: 15px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+#cartItem{
+    display: flex;
+    flex-direction: column;
+}
+
+tbody tr{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100%;
+}
+
+tbody tr td{
+    text-align: center;
+    width: 100px;
+}
+
+tbody tr td img{
+    text-align: center;
+    width: 100%;
+}
+
+.cross{
+    width: 50px;
+}
+
+.deleteCourse{
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    display: block;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    font-size: 25px;
+}
